@@ -1,6 +1,7 @@
 def oxford_comma(array)
     new_array = []
     counter = 1
+    oxford_string = new_array.join
     array.each do |string|
         if counter == 1
         new_array << string
@@ -14,5 +15,5 @@ def oxford_comma(array)
             new_array << ", and #{string}"
         end
     end
-    new_array.join
+    oxford_string
 end
